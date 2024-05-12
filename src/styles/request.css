@@ -1,0 +1,40 @@
+.requests-container {
+    min-height: 100svh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.completed {
+    /* orange complited color */
+    color: #FFA500;
+}
+
+
+.tabPanel {
+    display: flex;
+    flex-direction: column;
+}
+
+.sticks{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+}
+.sticks .left{
+    position: absolute;
+    display: flex;
+    left: -20%;
+    top: 45vh;
+}
+.sticks .right{
+    position: absolute;
+    display: flex;
+    right: -10%;
+    top: 15vh;
+}
