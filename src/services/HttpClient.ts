@@ -44,8 +44,8 @@ class HttpClient {
                         }).catch(() => HttpClient.defaultError);
                     case 422:
                         return error.response;
-                    case 401:
-                        return window.location.href = '/login';
+                    // case 401:
+                    //     return window.location.href = '/login';
                     default: return error.response;
                 }
             });
@@ -61,8 +61,8 @@ class HttpClient {
                 if (!error.response)
                     return HttpClient.defaultError;
 
-                if (error.response?.status === 401 && window.location.pathname !== '/login')
-                    window.location.href = '/login';
+                // if (error.response?.status === 401 && window.location.pathname !== '/login')
+                //     window.location.href = '/login';
 
                 return error.response;
             });
