@@ -3,7 +3,7 @@ import axios, { AxiosError, AxiosResponse } from 'axios';
 class HttpClient {
 
     public static version = 'api/v1';
-    public static host = process.env.REACT_APP_HOST!;
+    public static host = 'https://api.group.bashammakh.sa/';
 
     public get config() {
         return {
